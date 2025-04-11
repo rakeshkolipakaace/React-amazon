@@ -9,7 +9,7 @@ import Search_Products from './pages/Search_Product'
 import TrendingSlider from './components/Trending_Slider'
 
 const App = () => {
-  // App.jsx
+  
   return (
     <Router>
        <Navbar/>
