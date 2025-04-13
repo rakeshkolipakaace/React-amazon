@@ -7,7 +7,7 @@ const videoPlayer = ({src})=> {
       src={src}
       className="video-player"
       autoPlay
-      Loop
+      loop
       muted
       playsInline
       
