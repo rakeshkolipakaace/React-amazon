@@ -1,9 +1,13 @@
 import React from 'react'
+import DataContext from '../context/DataContext'
+import products from "./Product"
+import videoplayer from "./videoPlayer"
 
 function All_Products() {
+  const{product}=useContext(DataContext)
   return (
-    <div>All_Products</div>
+    <>Products item={Product}</>
   )
 }
 
-export default All_Products
+export default All_Products;
