@@ -67,3 +67,25 @@ body::-webkit-scrollbar {
   padding-top: 0.9rem !important;
   padding-bottom: .5rem !important;
 }
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.video-player{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:var(--border-radius);
+  object-fit: cover;
+}
