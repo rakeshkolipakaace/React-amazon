@@ -53,9 +53,9 @@ const Product = ({ items }) => {
           {items.map((product) => (
             <div
               key={product.id}
-              className="col-lg-4 col-md my-3 d-flex justify-content-center"
+              className="col-lg-4 col-md my-3 d-flex justify-content-center align-items-center"
             >
-              <div className="card product-card" style={{ width: "18rem" }}>
+              <div className="card product-card text-center" style={{ width: "18rem" }}>
                 <Link to={`/product/${product.id}`} className="image-container">
                   <img
                     src={product.imgSrc}
@@ -63,6 +63,15 @@ const Product = ({ items }) => {
                     alt={product.title}
                   />
                 </Link>
+                <div className="card-body text-center ">
+                  <h5 className="card-title">{product.title}</h5>
+                  <p className='product-price'>{product.price} ₹</p>
+                  <div className="buttoncontainer">
+                    <button className='btn add-to-cart'>🛒 Add To Cart</button>
+
+                  </div>
+
+                </div>
               </div>
             </div>
           ))}
