@@ -1,9 +1,18 @@
 import React from 'react'
 
-function videoPlayer() {
+const videoPlayer = ({src})=> {
   return (
-    <div>videoPlayer</div>
+    <><div className="video-container">
+      <video
+      src={src}
+      className="video-player"
+      autoPlay
+      Loop
+      muted
+      playsInline
+      
+      /></div></>
   )
 }
 
-export default videoPlayer
+export default videoPlayer;
