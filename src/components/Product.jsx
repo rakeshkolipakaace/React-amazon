@@ -44,10 +44,12 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ShopByCategory from './ShopByCategory'
 
 const Product = ({ items }) => {
   return (
     <>
+    <ShopByCategory/>
       <div className="container">
         <div className="row d-flex justify-content-center">
           {items.map((product) => (
